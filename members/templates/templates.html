@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Testing
+{% endblock %}
+
+{% block content %}
+  <h1>Testing</h1>
+  
+  {% for x in fruits %}
+    <h1>{{ x }}</h1>
+  {% endfor %}
+  
+  <p>Check out <a href="/members">members</a></p>
+{% endblock %}

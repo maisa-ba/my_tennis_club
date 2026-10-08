@@ -9,7 +9,9 @@
   
   <ul>
     {% for x in mymembers %}
-      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+      <li><a href="/members/details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
     {% endfor %}
   </ul>
+
+  <p>Back to <a href="/">Main</a></p>
 {% endblock %}
